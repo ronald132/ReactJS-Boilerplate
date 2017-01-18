@@ -30,7 +30,7 @@ app.get('*', function (req, res) {
 app.listen(port,function() {
    browserSync ({
      proxy: 'localhost:' + port,
-     files: ['source/**/*.{jsx}','public/**/*.{css}'],
+     files: ['src/**/*.{jsx}','public/**/*.{css}'],
      options: {
        ignored: 'node_modules'
      }
